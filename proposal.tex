@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{0.0in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\textheight}{1.25in}
+
+\long\def\ignore#1{}
+
+%\newcommand{\comment}[1]{}
+\newcommand{\comment}[1]{\noindent\textbf{Comment:}\emph{#1}}
+
+\begin{document}
+
+\bibliographystyle{plain}
+
+\begin{center}
+\LARGE \bf  A Modular Approach to Building\\
+and Verifying Programming Languages
+\end{center}
+
+\medskip
+
+\input{justification}
+\input{state-of-knowledge}
+\input{plan-of-work}
+\input{need}
+\input{word-count}
+
+\newpage
+
+
+\bibliography{gia-references}
+
+\end{document}
