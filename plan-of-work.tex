@@ -1,0 +1,183 @@
+\section*{Plan of Work}
+
+%% From the CFP:
+%%   o Description and a timeline of the work you propose to undertake 
+%%   o History of the project
+%%   o Elements of the project you expect to complete during the grant
+%%     period 
+%%   o Materials and methods to be used
+%%   o Hypotheses to be tested or the specific questions to be
+%%     addressed, and the approaches you will take to reach your goals
+%%     (where appropriate) 
+%%   o Use sufficient detail to permit a critical evaluation of the
+%%     project's likelihood of success and address potential
+%%     significance of the work 
+
+The conventional role of metatheory for programming languages it to
+provide an assurance that analyses that are carried out statically
+over programs are accurate predictors of their execution behavior.
+%
+A canonical example of this kind arises in the context of
+typechecking.
+%
+This is an analysis that is built into determining the acceptability
+of a program before it is run.
+%
+However, its purpose is to ensure that a program that is deemed to be
+well-formed will not stall during execution because an operation is
+asked to be performed on data to which it cannot be meaningfully
+applied.
+%
+Clearly, the static analysis is not directly linked to the dynamic
+behavior.
+%
+Rather, the linkage must be established through a reasoning process.
+%
+That process must have as input also a specification of the execution
+process and it must reason based on it to show that
+``type-correctness'' is preserved over computational steps.
+
+From what is said above, it becomes clear that metatheory involves the
+interaction of three distinct components.
+%
+First, there are the language specifications, which encompass those
+describing analyses (such as type-checking) and those specifying
+behavior (such as the execution steps which are based on the program
+expression). 
+%
+Next, there is an articulation of properties that are intended to link
+the analyses to program behavior.
+%
+Finally, it is necessary to provide proofs of the properties, which
+must be based on language specifications and, of course, a knowledge
+of what is being asserted.
+%
+The difficulties in the library-based view of extensible languages are
+twofold.
+%
+First, when an extension describes an analysis it must do this without
+knowledge of the constructs added by other extensions in the library.
+%
+Second, we must decide how to distribute the construction of proofs
+across different components and, in any case, this task has to be
+carried out with only partial knowledge of the language constructs and
+associated specifications.
+
+In their recent collaborative work, the PIs have pioneered an effort
+to come to grips with the metatheory problem for extensible languages~\cite{michaelson2025toplas}.
+%
+A key idea originating from their work is that the host language can
+provide a medium through which extensions in the library can
+``understand'' each other.
+%
+Specifically, when an extension adds a new construct to a
+syntactic category identified by the host language---which is the only
+way it can share linguistic features with other extensions---then it
+must describe a \emph{projection} onto host language syntax that other
+extensions can use as an image for its constructs.
+%
+Further, the extension should ensure that a specific relationship
+holds between the semantic attributes of its constructs and their
+projections.
+%
+These relationships, which are called \emph{projection constraints},
+are specified by the host language and amounts to it setting the
+parameters for participation in the language library.
+%
+Extensions must establish that they satisfy the projection constraints
+as their ``right of passage.''
+
+Using the structure described above, the PIs have developed a
+methodology for modularizing proofs of language properties.
+%
+Properties have been distinguished into two kinds called
+\emph{foundational} and \emph{auxiliary} in this work.
+%
+Foundational properties are ones that are articulated by the host
+language and they are ones whose proof each extension can contribute
+to.
+%
+An auxiliary property is oriented around an analysis introduced by an
+extension and it is therefore one unknown to other components.
+%
+The proof of an auxiliary property must therefore be constructed
+entirely within the extension that introduces it but, of course, using
+its knowledge of the host language and projection constraints.
+%
+The work has developed a methodology for constructing such proofs that
+has been shown to be sound by using the concrete structure of a logic
+and proof system originating from the past research of one of the PIs.
+%
+Moreover, the overall framework has been implemented in a system
+called Extensibella, thereby providing a vehicle for experimentation
+with the methodology. 
+
+While the theoretical underpinnings for the modular reasoning
+framework are now established, much remains to be
+done towards demonstrating its practical viability.
+%
+This project will make a start in this direction.
+%
+Two particular questions will be targeted in its duration:
+%
+\begin{enumerate}
+\item The examples that have been used in motivating and developing
+  the framework have relied on a conventional ``syntactic'' approach
+  to specifying the semantics of programming languages.
+  %
+  There is a growing interest in an alternative ``logical''
+  approach~\cite{timany2024jacm} that adds considerable power to
+  metatheoretical analysis and is increasingly being used in
+  applications. 
+  %
+  It is our assessment at the outset that the method of defining
+  semantics and articulating properties is orthogonal to the issue of
+  modularizing proofs; if anything we believe the new methods may
+  dovetail into the way we have proposed to prove auxiliary
+  properties.
+  %
+  However, this is a hypothesis that needs validation, something that
+  we will endeavor to provide.
+
+\item Our approach to treating interactions between extensions
+  involves having the host language impose structure on the library
+  through projection constraints.
+  %
+  At a formal level, this accords well with the motto in programming
+  language work of obtaining dependability through discipline.
+  %
+  However, there are many empirical questions concerning the
+  connections between the richness of the host language, the strength
+  of projection constraints, the flexibility of extensions, and the
+  depth of the properties that can be proved that need to be further
+  explored. 
+  %
+  We will conduct experiments, perhaps use some of the extensibility
+  libraries developed by the Van Wyk group, towards understanding the
+  choices in these realms better.
+\end{enumerate}
+%
+The work in both cases will be carried out by understanding proof
+methods, identifying language libraries that will provide insights
+into the underlying questions, constructing models and proofs, and
+analyzing aspects such as the extensions that can be described and the
+properties that can be expressed and proved within the framework.
+%
+The Extensibella system will be used in the experiments.
+%
+The primary effort will be that of a graduate student with interest in
+programming languages research.
+%
+Both PIs will oversee the effort.
+
+While the work that we intend to carry out has its own intellectual
+justification, we mention that the questions that it will investigate
+were raised about an NSF proposal for which funding was declined in
+2025 despite a competitive rating.
+%
+We have tried to respond to these questions in a different way in a
+recent resubmission.
+%
+The successful completion of this project will enable a more direct
+response to what we see as the main obstacle to NSF funding for this
+thrust in our research.
