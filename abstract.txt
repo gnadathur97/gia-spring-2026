@@ -1,0 +1,30 @@
+
+Extensible languages are ones that can evolve with new features to
+meet their user's needs, especially in specific problem domains. This
+approach allows languages to be more expressive than conventional
+ones. Extensibility, however, raises challenges to ensuring that
+languages, and independent extensions to them, actually work as their
+designers intended.
+
+We have developed a modular means for formally verifying the
+correctness of extensible languages and their extensions using the
+conventional "syntactic" approach. A new "logical" approach adds
+considerable power to specifying languages and proving correctness
+properties over them. This approach has gained traction recently and
+was highlighted as missing in our work in a recent competitive, but
+unsuccessful, National Science Foundation proposal.
+
+We have developed some initial ideas about how our work can be extended
+to this new approach, but they need further development and
+evaluation through sample applications to be included in a successful
+re-submission of the NSF proposal.  This is a significant effort and
+one that we, as PIs, cannot complete in a reasonable amount of time on
+our own. Thus, we are requesting Grant-in-Aid funding to help fill in
+this gap so that a re-submission might be successful.
+
+
+
+
+
+
+
