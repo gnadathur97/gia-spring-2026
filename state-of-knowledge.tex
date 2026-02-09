@@ -1,0 +1,169 @@
+\section*{Present State of Knowledge}
+
+%% From the CFP: Provide a brief overview indicating the nature and
+%% importance of the project; place its importance within the context
+%% of general knowledge in your field and indicate possible practical
+%% significance, if applicable. Include appropriate references from
+%% relevant literature to help place the project in context and
+%% further indicate your familiarity with the field.
+
+\noindent Programming languages play a fundamental role in the
+permeation of computing into everyday applications. 
+%
+Research on such languages is devoted to understanding aspects of
+their structure that makes them effective in this domain.
+%
+Such research has two complementary foci: \emph{expressivity} and
+\emph{verifiability}.
+%
+Expressivity aims to give substance to the sentiment that languages
+should make it easy to translate conceived solutions to computational
+problems into actual, working programs.
+%
+Verifiability, on the other hand, dictates that the languages we
+design should make it easier to ascertain that the programs we write
+in fact realize the intended computations.
+%
+These two concerns have mediated the transition from low-level
+assembler languages to the high-level languages that underlie the
+explosive growth of sophisticated and usually functional software.
+%
+Modern-day applications have raised another challenge for the notion
+of expressivity vis-a-vis programming languages: they must support
+primitives that are easy for experts in specialized domains to
+understand and use.
+%
+\emph{Language extensibility} has been proposed and
+investigated as a means for supporting expressivity in this context.
+%
+While such research has been largely successful in enhancing
+expressivity, it raises new questions with regard to verifiability.
+%
+The work we propose here fits under a broader project that the PIs are
+undertaking to understand these questions and to build a platform for  
+addressing them.
+%
+We discuss the interactions between expressivity, extensibility and
+verifiability in more detail below towards providing a framework for
+describing the specific work we will undertake. 
+
+\medskip
+\noindent {\bf Language expressivity and extensibility.} Expressivity
+had for long been considered to be an attribute of one properly
+designed language.  
+%
+However, this view has been challenged by the realization that the
+meaning of expressivity can be impacted by aspects such as the
+granularity of computations and the domain to which they are applied.
+%
+One reaction to this situation has been to persist with the idea of
+one ``general purpose'' language but to design specific extensions to
+it that are targeted to providing particular missing features.
+%
+There are several examples of such efforts, ranging from ones that add 
+capabilities for supporting database queries or concurrent
+programming~\cite{price2001sqlj,frigo89pldi}, to those that add new
+analyses that ensure security in information flow or unwanted
+interference does not occur in concurrent programs that work over the
+same data~\cite{myers99popl,georges2025popl}. 
+%
+Language
+extensibility~\cite{ekman07oopsla,erdweg11oopsla,tobin2011languages,zenger2005fool}
+has been investigated as a {\it different} approach to solve this
+problem.
+%
+The central idea underlying this approach is that a language is to be
+viewed as the composition of a \emph{host language} that provides a
+core set of programming features with components chosen from an
+\emph{open library of independent extensions} developed around the
+host language that contribute additional desired features.
+%
+This line of research brings a \emph{foundational} perspective to
+language extensibility: the questions that are asked pertain to the
+properties that the library should possess to make compositions work
+and to give programmers a seamless view of a language that ``under the 
+covers'' may actually be the result of combining different components
+from a library. 
+
+\medskip
+\noindent {\bf Language extensibility and modularity.} A fundamental
+requirement of the library view of extensibility is that language
+extensions must be {\it composable}, \ie, it should be possible to use
+an extension in combination with \emph{any collection} of other
+extensions from the library to produce a working and well-behaved
+language.  
+%
+For this to be possible, the library must support the ability for an 
+extension to check its compatibility \emph{without specific knowledge
+of the other extensions presently in the library}. 
+%
+We refer to this feature as the {\it modularity property} for the
+framework.
+%
+One problem that must be solved in this context pertains to
+language specifications: the vocabulary, constructs and associated
+analyses introduced by different extensions might overlap, potentially
+resulting in an ill-defined composition.
+%
+This issue has been addressed by the work of several research groups,
+including the group led by one of the PIs.
+%
+For example, criteria have been enunciated for ensuring that the
+composition of extensions with overlapping syntax will be syntactically
+well-defined~\cite{schwerdfeger09pldi}, and these have
+been complemented by concrete methods for checking that a given
+extension satisfies the formal guidelines.
+%
+Similar work has been done at the level of ensuring that the analyses
+that an extension associates with the constructs it defines are
+compatible with what is required by the library and, conversely, that
+any new analyses it introduces will fit with the library
+structure~\cite{kaminski12sle}. 
+%
+In short, modularity in language specification in the context of the
+library view of language extensibility can be assumed to be a solved
+problem, as we do within this project. 
+
+\medskip
+\noindent {\bf Language extensionality and verifiability.} A key
+aspect of a programming language that facilitates reasoning about
+program behavior are its {\it meta-theoretic properties}.
+%
+These are properties that are guarantee to hold of {\it any} program
+just because they are written in that language.
+%
+One common example of a meta-theoretic property is that which says a
+well-formed program in a typed language will never encounter a type
+error when it is run: this property, in turn, allows us to conclude
+that a program that has passed the checks in a compiler will not stall
+during execution.
+%
+The development of methods and mechanical theorem-proving systems that
+support the effective verification of such properties is a cornerstone
+of modern research in the area (\eg, see~\cite{pierce2026sf}).
+%
+However, almost all this work has been focused on a situation where
+a language is provided as a monolithic whole, a condition that
+\emph{does not} obtain in the library-based view of extensibility that
+underlies this proposal. 
+%
+The PIs, who have individual expertise in extensible languages and
+formal treatments of meta-theory, have started a collaboration in
+recent years to develop an approach to proving meta-theoretic
+properties that will work for extensible languages.
+%
+As with language specifications, an important requirement is that the
+approach must be modular: it should be possible for individual
+extensions to contribute to 
+proofs of global properties for the constructs they add to a composed  
+language and the framework must also support a means to prove a
+property articulated by an extension concerning an analysis that it
+has introduced.
+%
+The PIs have developed a methodology for realizing these requirements
+and have established its theoretical underpinnings in recent
+work~\cite{michaelson2025toplas}.
+%
+This award request is for research that will explore certain practical
+aspects of the scheme that seems important to securing funds from the
+NSF for a more ambitious investigation. 

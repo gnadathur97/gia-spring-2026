@@ -1,0 +1,142 @@
+@string{lncs = "LNCS"}
+@string{sv = {Springer}}
+#@string{acmpub = "ACM Press"}
+@string{acmpub = "ACM"}
+
+@book{price2001sqlj,
+  author = "Price, Jason",
+  title = "Java Programming With Oracle {SQLJ}",
+  year = 2001,
+  publisher = "O'Reilly Media",
+  isbn = "978-0-596-00087-5"
+}
+
+@inproceedings{myers99popl,
+ author = {Myers, Andrew C.},
+ title = {JFlow: Practical Mostly-static Information Flow Control},
+ booktitle = {Proceedings of the 26th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '99},
+ year = {1999},
+ isbn = {1-58113-095-3},
+ location = {San Antonio, Texas, USA},
+ pages = {228--241},
+ numpages = {14},
+ doi = {10.1145/292540.292561},
+ acmid = {292561},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{frigo89pldi,
+ author = {Frigo, Matteo and Leiserson, Charles E. and Randall, Keith H.},
+ title = {The implementation of the {Cilk-5} multithreaded language},
+ booktitle = {Proceedings of Programming Language Design and Implementation},
+ series = {PLDI '98},
+ year = {1998},
+ location = {Montreal, Quebec, Canada},
+ publisher = {ACM},
+ pages = {212--223},
+ numpages = {12},
+} 
+
+@article{georges2025popl,
+author = {Georges, A\"{\i}na Linn and Peters, Benjamin and Elbeheiry, Laila and White, Leo and Dolan, Stephen and Eisenberg, Richard A. and Casinghino, Chris and Pottier, Fran\c{c}ois and Dreyer, Derek},
+title = {Data Race Freedom \`{a} la Mode},
+year = {2025},
+issue_date = {January 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {POPL},
+url = {https://doi.org/10.1145/3704859},
+doi = {10.1145/3704859},
+abstract = {We present DRFcaml, an extension of OCaml's type system that guarantees data race freedom for multi-threaded OCaml programs while retaining backward compatibility with existing sequential OCaml code. We build on recent work of Lorenzen et al., who extend OCaml with modes that keep track of locality, uniqueness, and affinity. We introduce two new mode axes, contention and portability, which record whether data has been shared or can be shared between multiple threads. Although this basic type-and-mode system has limited expressive power by itself, it does let us express APIs for capsules, regions of memory whose access is controlled by a unique ghost key, and reader-writer locks, which allow a thread to safely acquire partial or full ownership of a key. We show that this allows complex data structures (which may involve aliasing and mutable state) to be safely shared between threads. We formalize the complete system and establish its soundness by building a semantic model of it in the Iris program logic on top of the Rocq proof assistant.},
+journal = {Proc. ACM Programming Languages},
+month = jan,
+articleno = {23},
+numpages = {31},
+keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type systems}
+}
+
+@inproceedings{zenger2005fool,
+  title={Independently extensible solutions to the expression problem},
+  author={Zenger, Matthias and Odersky, Martin},
+  booktitle = "Proc. Workshop on Foundations of Object-Oriented Languages, FOOL 12",
+  year={2005}
+}
+@inproceedings{ekman07oopsla,
+ author = {Torbj\"{o}rn Ekman and G\"{o}rel Hedin},
+ title = {The {JastAdd} extensible {Java} compiler},
+ booktitle = {Proc. of ACM Conf. on Object Oriented Programming, Systems, Languages and Applications},
+ year = {2007},
+ pages = {1--18},
+ location = {Montreal, Quebec, Canada},
+ publisher = acmpub,
+ }
+
+@inproceedings{erdweg11oopsla,
+ author = "Sebastian Erdweg and Tillmann Rendel and Christian Kastner 
+           and Klaus Ostermann",
+ title = "{SugarJ}: Library-based Syntactic Language Extensibility",
+ booktitle = {Proc. of ACM Conf. on Object Oriented Programming, Systems, Languages and Applications},
+ publisher = "ACM",
+ pages = "391–406",
+ year = 2011
+}
+@inproceedings{tobin2011languages,
+ author = {Tobin-Hochstadt, Sam and St-Amour, Vincent and Culpepper, Ryan and Flatt, Matthew and Felleisen, Matthias},
+ title = {Languages As Libraries},
+ booktitle = {Proc. of PLDI, Programming Langauges Design and Engineering},
+ year = {2011},
+ pages = {132--141},
+ numpages = {10},
+ publisher = {ACM}
+} 
+
+@inproceedings{schwerdfeger09pldi,
+ author    = "Schwerdfeger, August and Van Wyk, Eric",
+ title     = "Verifiable Composition of Deterministic Grammars",
+ booktitle = "Proc. of ACM SIGPLAN conference on Programming Language Design and Implementation (PLDI)",
+ year = 2009,
+ month = "June",
+ pages = {199--210},
+ publisher = acmpub
+}
+
+@inproceedings{kaminski12sle,
+ author    = "Kaminski, Ted and Van Wyk, Eric",
+ title     = "Modular well-definedness analysis for attribute grammars",
+ booktitle = "Proceedings of the 5th International Conference on Software
+              Language Engineering ({SLE} 2012)",
+ series    = lncs,
+ publisher = sv,
+ year      = 2012,
+ month     = "September",
+ volume    = "7745",
+ pages     = "352--371"
+}
+
+@unpublished{pierce2026sf,
+author = "B. C. Pierce {\it et al}",
+title  = "{\it Software Foundations, Volume 1-7}",
+note   = "A seven volume electronic textbook available from {\tt https://softwarefoundations.cis.upenn.edu/}"}
+
+@article{michaelson2025toplas,
+author = {Michaelson, Dawn and Nadathur, Gopalan and Van Wyk, Eric},
+title = {A Modular Approach to Metatheoretic Reasoning for Extensible Languages},
+year = {2025},
+issue_date = {September 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {47},
+number = {3},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/3731555},
+doi = {10.1145/3731555},
+abstract = {This article concerns the development of metatheory for extensible languages. It starts with the view that programming languages tailored to specific application domains are to be constructed by composing components from an open library of independently-developed extensions to a host language. In this context, static analyses (such as typing) and dynamic semantics (such as evaluation) are described via relations whose specifications are distributed across the host language and extensions and are given in a rule-based fashion. Metatheoretic properties, which ensure that static analyses accurately gauge runtime behavior, are represented by formulas over such relations. These properties may be fundamental to the language or they may pertain to analyses introduced by individual extensions. We consider the problem of modular metatheory, by which we mean that proofs of relevant properties should be constructible by reasoning independently within each component in the library. To solve this problem, we propose the twin ideas of decomposing proofs around language fragments and of reasoning generically about extensions based on broad, a priori constraints imposed on their behavior. We establish the soundness of these styles of reasoning by showing how complete proofs of the properties can be automatically constructed for any language obtained by composing the independent parts. Precision in these arguments results from framing them within a logic that encodes inductive, rule-based specifications via least fixed-point definitions. We have implemented our ideas in a language specification system called Sterling and a proof assistant called Extensibella and have used them to validate the examples that motivate the theoretical discussions.},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = sep,
+articleno = {10},
+numpages = {56},
+keywords = {extensible languages, programming languages meta-theory, modular language development, automated reasoning}
+}
