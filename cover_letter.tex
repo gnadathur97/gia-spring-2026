@@ -1,0 +1,125 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx,setspace}
+\usepackage[letterpaper,margin=1.2in]{geometry}
+
+\usepackage{color}\definecolor{modmaroon}{cmyk}{0.00,0.97,0.58,0.35} %%Color
+%\newcommand{\color}[1]{}                                            %% B & W
+
+\newcommand{\BlankLetterHead}[1]{\vspace*{1.0in}}  %% BlankHead
+%\newcommand{\BlankLetterHead}{}                   %% FullHead
+
+%\linespread{1.3}
+
+\begin{document}
+\thispagestyle{empty}
+
+%\BlankLetterHead
+{\newcommand{\2}{\hspace*{.25pt}}
+\newcommand{\5}[1]{\scalebox{1.10}[1]{{\rm #1}}}
+\newcommand{\shrink}[1]{\scalebox{.81}{#1}}
+\newcommand{\mc}{\multicolumn}
+\raisebox{.5in}[\height][\depth]{%
+\centerline{\resizebox{6.5in}{!}{\hspace*{-.3in}%
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\ttdefault}{pcr}
+\begin{minipage}{7.5in}%
+\begin{tabular}{@{}lll}
+\mc{3}{@{}l}{%
+\scalebox{.71}[.82]{\color{modmaroon}\Huge\sc\5U\2n\2i\2v\2e\2r\2s\2i\2t\2y\2 o\2f M\2i\2n\2n\2e\2s\2o\2t\2a}%
+} \\[-4pt]
+\makebox[0pt][l]{\rule{7.0in}{.5pt}} & & \\
+\shrink{\bf\itshape Twin Cities Campus} \rule{0.9in}{0pt} 
+ &  \shrink{\bf\itshape Department of Computer Science and Engineering} \rule{0.7in}{0pt}
+    &  \shrink{\it 4-192 Keller Hall}             \\[-4pt]
+ &  \shrink{\it \raisebox{-5pt}[0pt][0pt]{College of Science and Engineering}}
+    & \shrink{\it 200 Union Street S.E. }         \\[-4pt]
+ &  & \shrink{\it Minneapolis, MN 55455-0159}     \\[2pt]
+&  & \shrink{\it Dept: +1 612-625-4002 }          \\[-4pt]
+% &  & \shrink{\it Direct: +1 612-625-0329}        \\[-4pt]
+% &  & \shrink{\it Fax:~ +1 612-625-0572}          \\[-4pt]
+% &  & \shrink{\it http://www.cs.umn.edu}
+\end{tabular}
+\end{minipage}}\hfill\hfill}}
+%
+}
+
+\vskip -0.5cm
+
+\noindent
+\hfill\today
+
+\bigskip\noindent
+Grant-in-Aid Proposal Review Committee 
+
+\bigskip
+
+\parskip 1ex
+\noindent
+Dear Committee Members:
+
+
+% Special Requests for Established Investigators' Pilot Projects
+% - Why can't the pilot data be obtained without GIA funding? 
+% - Where will the proposed research lead? What competitions would you
+%   be able to apply for?
+
+
+Please find enclosed our Grant-in-Aid proposal entitled 
+\emph{A Modular
+Approach to Verifying Properties of Extensible Programming
+Languages}.
+%
+We are submitting this proposal in the category of 
+\emph{Special Requests for Established Investigators' Pilot Projects}.
+
+We are applying to Grant-in-Aid funds in order to complete some
+preliminary investigations called for in a competitive, but
+ultimately unsuccessful, grant proposal to the National Science
+Foundation (NSF).
+
+The proposal requests funds for a graduate research assistant to
+assist in applying our approach to verifying properties of extensible
+languages to a relatively new and promising way to specify programming
+language semantics and to structure proofs for these kinds of
+properties.
+
+Our previous work built on the conventional ``syntactic'' approach
+that has been used successfully for several decades. This work
+includes that development of the core ideas and several applications
+of them to sample languages and extensions to them. There is a newer
+``logical'' approach that adds considerable power to specifying
+languages and proving properties over them. 
+%
+We have some initial ideas about how our work can extended to this new
+approach, but we need to further develop these ideas and the
+evaluation of the through sample applications for a successful
+re-submission of the NSF proposal.
+
+This is not a small task and one that we, as PIs, cannot complete in a
+reasonable amount of time on our own. Thus we are requesting
+Grant-in-Aid funding to help fill in the gap so that our re-submission
+might be successful.
+
+The program to which we are applying is one without annual deadlines,
+and thus we anticipate re-submission shortly after the work proposed
+here is completed.
+
+\bigskip
+
+\begin{tabbing}
+\hskip 2.5in\=\kill
+\>Sincerely, \\
+\\
+%\>\includegraphics{../Sig.png} \\
+\>Gopalan Nadathur\\
+\>Professor \\
+\>Department of Computer Science and Engineering \\
+\\
+\>Eric Van Wyk \\
+\>Professor \\
+\>Department of Computer Science and Engineering \\
+\end{tabbing}
+
+
+\end{document}
