@@ -1,11 +1,26 @@
 ..... This will be pasted into the submission form ...
 
-The PIs anticipate that each of the two research efforts described in
-the Plan of Work section of the proposal will take around one semester
-for the RA to complete. Having both of these pieces well developed for
-a resubmission of the proposal will be important to addressing the
-issue and having a highly competitive proposal. Thus we are requesting
-2 semesters of funding for the RA. 
+The PIs anticipate that each of the two research components described
+in the Plan of Work section of the proposal will take around one
+semester for a graduate research assistant (GRA) to complete. Having
+both of these pieces well addressed in a resubmission of the NSF
+proposal will be provide a comprehensive response to the issues
+raised. In our estimation, this will make it a highly competitive 
+proposal. For this reason, we are requesting two semesters of support
+for a GRA in this proposal.
+
+Of the two research components, it is our estimation that having the
+first issue completely addressed will be more critical to a
+resubmission of the NSF proposal than the second; this is the part of
+the project that demonstrates the compatibility of our scheme for
+modular proof development with the new, logical approach to specifying
+the semantics of programming languages. Thus, in a scenario where
+funds are extremely limited, we can envisage the support for the
+second semester being reduced in half to support a 25% GRA rather than
+the currently requested 50%. However, this is not the ideal choice
+from the perspective of addressing the questions raised relative to
+our NSF proposal, which is why we have not structured our request in
+this manner at the outset.
 
 It may be possible to have a highly competitive proposal if only the
 first effort, the more theoretical hypothesis validation step, is
