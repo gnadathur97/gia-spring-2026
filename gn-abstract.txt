@@ -1,27 +1,2 @@
-
-Extensible languages are ones that can evolve to include new features
-that meet their users' needs. An influential approach to designing
-such languages is based on developing a library of extensions around a
-"host" language; users can draw as needed from the library to obtain a
-language that meets their programming needs. A key requirement of such
-an approach is modularity: extensions should be designable
-independently with the guarantee that they will function appropriately
-when combined with other components. An important part of "functioning
-appropriately" is that it should be possible to state and establish
-formal properties of the resulting language. In past work, we have
-developed and proved sound a modular approach to meeting this
-requirement. A key ingredient of our approach is that the host
-language has the capability to constrain the behavior of
-extensions. This project will understand the practical consequences of
-this structure. Additionally, it will examine the compatibility of the
-approach with a new, powerful, and increasingly popular method for
-describing program behavior. This work will help fill a gap in a
-recent competitive but unsucessful National Science Foundation
-proposal.
-
-
-
-
-
-
+Extensible programming languages are ones that can evolve to include new features that meet their users' needs. An influential approach to designing such languages is based on developing a library of extensions around a "host" language; users can draw as needed from the library to obtain a language that meets their programming needs. A key requirement of such an approach is modularity: extensions should be designable independently with the guarantee that they will function appropriately when combined with other components. An important part of "functioning appropriately" is that it should be possible to state and establish formal properties of the resulting language. In past work, we have developed and proved sound a modular approach to meeting this requirement. A key ingredient of our approach is that the host language is given the capability to constrain the behavior of extensions. This project will understand the practical consequences of this structure. Additionally, it will examine the compatibility of the approach with a new, powerful, and increasingly popular method for describing program behavior. This work will help fill a gap in a recent competitive but unsucessful National Science Foundation proposal.
 
