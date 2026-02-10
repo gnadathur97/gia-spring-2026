@@ -9,6 +9,10 @@ raised. In our estimation, this will make it a highly competitive
 proposal. For this reason, we are requesting two semesters of support
 for a GRA in this proposal.
 
+======================
+Use this para if it works
+======================
+
 Of the two research components, it is our estimation that having the
 first issue completely addressed will be more critical to a
 resubmission of the NSF proposal than the second; this is the part of
@@ -21,6 +25,11 @@ the currently requested 50%. However, this is not the ideal choice
 from the perspective of addressing the questions raised relative to
 our NSF proposal, which is why we have not structured our request in
 this manner at the outset.
+
+=====================
+This is the old second para. Leaving it in place in case the
+replacement does not work.
+=====================
 
 It may be possible to have a highly competitive proposal if only the
 first effort, the more theoretical hypothesis validation step, is
